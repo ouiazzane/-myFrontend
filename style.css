@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #9498db;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task label {
+    cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #35353a;
+}
